@@ -1,0 +1,27 @@
+name: make-epub
+
+on:
+  push:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install zip
+        run: sudo apt-get install -y zip
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: zip -r guwenguanzhi.epub content.opf cover.jpeg images META-INF mimetype page_styles.css stylesheet.css text titlepage.xhtml toc.ncx NotoS*
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Snapshot build"
+          files: |
+            guwenguanzhi.epub
