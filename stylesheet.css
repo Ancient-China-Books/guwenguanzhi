@@ -1,0 +1,199 @@
+.calibre {
+  font-family: "Noto Serif SC Medium";
+  font-size: 110%;
+  line-height: 1.3;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  writing-mode: vertical-rl;
+  -epub-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  line-break: normal;
+  -webkit-line-break: normal;
+}
+.calibre1 {
+  display: block;
+}
+.calibre2 {
+  display: block;
+  font-size: 1.29167em;
+  line-height: 1.618em;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 5pt;
+}
+.calibre3 {
+  color: #00C;
+}
+.calibre4 {
+  display: block;
+  line-height: 1.2;
+}
+.calibre5 {
+  display: block;
+  text-indent: 2em;
+  margin: 1em 0;
+}
+.calibre6 {
+  text-decoration: none;
+}
+.calibre7 {
+  font-size: 1em;
+  line-height: 1.2;
+  vertical-align: super;
+}
+.calibre8 {
+  height: 0.1em;
+  width: auto;
+}
+.calibre9 {
+  line-height: 1.2;
+  text-decoration: none;
+}
+.calibre10 {
+  font-size: 0.91667em;
+  line-height: normal;
+  vertical-align: super;
+}
+.calibre11 {
+  font-size: 0.9em;
+  line-height: normal;
+  vertical-align: super;
+}
+.chapter {
+  display: block;
+  text-align: justify;
+}
+.chapter p {
+  /*display: block;
+  text-align: justify;*/
+  padding: 0 1% 0 1%;
+}
+.kindle-cn-heading {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0.67em 0;
+  padding: 0.75em 0;
+  border-top: #c7c7c7 dashed 2px;
+  border-bottom: #c7c7c7 dashed 2px;
+}
+.kindle-cn-heading1 {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0.67em 0;
+  padding: 0.75em 0;
+  border-bottom: #c7c7c7 dashed 2px;
+}
+.kindle-cn-inline-character {
+  height: auto;
+  margin-top: -0.5em;
+  vertical-align: middle;
+  width: 1.1em;
+}
+.kindle-cn-inline-character1 {
+  height: auto;
+  margin-top: -0.2em;
+  vertical-align: middle;
+  width: 1em;
+}
+.kindle-cn-inline-character2 {
+  height: auto;
+  line-height: 1.2;
+  margin-top: -0.2em;
+  vertical-align: middle;
+  width: 1em;
+}
+.kindle-cn-para-center {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  margin: 1em 0;
+}
+.kindle-cn-para-left {
+  color: #069;
+  font-size: 85%;
+  display: block;
+  text-align: justify;
+  text-indent: 2.5em;
+  margin: 1em 0;
+}
+.kindle-cn-para-left-1 {
+  display: block;
+  text-align: justify;
+  text-indent: 2em;
+  margin: 1em 0;
+}
+.kindle-cn-signature {
+  display: block;
+  text-align: right;
+  text-indent: 2em;
+  margin: 1em 0;
+}
+.kindle-cn-toc-level {
+  display: block;
+  margin-left: 0;
+}
+.kindle-cn-toc-level1 {
+  display: block;
+  margin-left: 2em;
+}
+.kindle-cn-toc-title {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  letter-spacing: 1em;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.67em 0 0.5em;
+  border-bottom: #000 dotted 1.5px;
+}
+.math-super {
+  font-size: 0.64516em;
+  vertical-align: super;
+}
+.small {
+  font-size: 0.77419em;
+}
+.small1 {
+  font-size: 1em;
+}
+.zhu {
+  color: #069;
+  font-size: 85%;
+  text-align: justify;
+  margin: 0;
+}
+.lcx_zhu {
+  color: #966;
+  text-align: justify;
+  margin: 0;
+}
+.title {
+  text-align: left;
+  color: #069;
+  display: block;
+  font-weight: normal;
+  font-size: 1.375em;
+  line-height: 120%;
+  margin: 1em 0 0.5em 1.5em;
+}
+.juan {
+  color: rgba(240, 0, 0, 0.7);
+  text-align: left;
+  display: block;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 110%;
+  margin: 0;
+}
+.lcx_jiao {
+  color: #966;
+  float: right;
+  margin-right: 0%;
+}
