@@ -2,10 +2,12 @@
   margin-bottom: 5pt;
   margin-top: 5pt;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+
 @font-face {
-  src: url(NotoSerifSC-Medium.otf);
-  font-family: 'Noto Serif SC Medium', 'Noto Serif SC', serif;
+  src: url(NotoSerifTC-Medium.otf);
+  font-family: 'Noto Serif TC Medium';
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
