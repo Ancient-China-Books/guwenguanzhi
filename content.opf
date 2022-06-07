@@ -1,4 +1,4 @@
-<?xml version="1.0"  encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
   <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
     <dc:title>古文观止（上下）</dc:title>
@@ -32,7 +32,7 @@
     <dc:subject>国学典藏</dc:subject>
     <dc:subject>選本</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">98cb99d0-385b-47a1-8b6a-f8068cb9ca11</dc:identifier>
+    <dc:identifier opf:scheme="calibre">53d6e4dc-6169-4a77-a52f-302218dbb91a</dc:identifier>
     <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
     <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
     <meta name="calibre:timestamp" content="2022-05-24T13:44:09.382584+00:00"/>
@@ -276,79 +276,20 @@
     <item id="page_css" href="page_styles.css" media-type="text/css"/>
     <item id="css" href="stylesheet.css" media-type="text/css"/>
     <item id="cover" href="cover.jpeg" media-type="image/jpeg"/>
-    <item id="id406" href="images/01.jpeg" media-type="image/jpeg"/>
-    <item id="id405" href="images/02.jpeg" media-type="image/jpeg"/>
-    <item id="id404" href="images/03.jpeg" media-type="image/jpeg"/>
-    <item id="id403" href="images/04.jpeg" media-type="image/jpeg"/>
-    <item id="id402" href="images/05.jpeg" media-type="image/jpeg"/>
-    <item id="id397" href="images/06.jpeg" media-type="image/jpeg"/>
-    <item id="id393" href="images/07.jpeg" media-type="image/jpeg"/>
-    <item id="id392" href="images/08.jpeg" media-type="image/jpeg"/>
     <item id="id391" href="images/09.jpeg" media-type="image/jpeg"/>
-    <item id="id388" href="images/10.jpeg" media-type="image/jpeg"/>
-    <item id="id384" href="images/11.jpeg" media-type="image/jpeg"/>
-    <item id="id380" href="images/12.jpeg" media-type="image/jpeg"/>
-    <item id="id378" href="images/13.jpeg" media-type="image/jpeg"/>
-    <item id="id376" href="images/14.jpeg" media-type="image/jpeg"/>
-    <item id="id374" href="images/15.jpeg" media-type="image/jpeg"/>
-    <item id="id373" href="images/16.jpeg" media-type="image/jpeg"/>
-    <item id="id365" href="images/17.jpeg" media-type="image/jpeg"/>
-    <item id="id363" href="images/18.jpeg" media-type="image/jpeg"/>
-    <item id="id360" href="images/19.jpeg" media-type="image/jpeg"/>
-    <item id="id355" href="images/20.jpeg" media-type="image/jpeg"/>
-    <item id="id354" href="images/21.jpeg" media-type="image/jpeg"/>
-    <item id="id353" href="images/22.jpeg" media-type="image/jpeg"/>
-    <item id="id352" href="images/23.jpeg" media-type="image/jpeg"/>
-    <item id="id351" href="images/24.jpeg" media-type="image/jpeg"/>
-    <item id="id350" href="images/25.jpeg" media-type="image/jpeg"/>
-    <item id="id346" href="images/26.jpeg" media-type="image/jpeg"/>
-    <item id="id345" href="images/27.jpeg" media-type="image/jpeg"/>
-    <item id="id342" href="images/28.jpeg" media-type="image/jpeg"/>
     <item id="id339" href="images/29.jpeg" media-type="image/jpeg"/>
-    <item id="id336" href="images/30.jpeg" media-type="image/jpeg"/>
-    <item id="id335" href="images/31.jpeg" media-type="image/jpeg"/>
-    <item id="id334" href="images/32.jpeg" media-type="image/jpeg"/>
-    <item id="id329" href="images/33.jpeg" media-type="image/jpeg"/>
     <item id="id325" href="images/34.jpeg" media-type="image/jpeg"/>
-    <item id="id322" href="images/35.jpeg" media-type="image/jpeg"/>
-    <item id="id321" href="images/36.jpeg" media-type="image/jpeg"/>
-    <item id="id320" href="images/37.jpeg" media-type="image/jpeg"/>
-    <item id="id319" href="images/38.jpeg" media-type="image/jpeg"/>
-    <item id="id318" href="images/39.jpeg" media-type="image/jpeg"/>
     <item id="id317" href="images/40.jpeg" media-type="image/jpeg"/>
-    <item id="id316" href="images/41.jpeg" media-type="image/jpeg"/>
-    <item id="id315" href="images/42.jpeg" media-type="image/jpeg"/>
-    <item id="id314" href="images/43.jpeg" media-type="image/jpeg"/>
-    <item id="id306" href="images/44.jpeg" media-type="image/jpeg"/>
-    <item id="id304" href="images/45.jpeg" media-type="image/jpeg"/>
-    <item id="id302" href="images/46.jpeg" media-type="image/jpeg"/>
     <item id="id300" href="images/47.jpeg" media-type="image/jpeg"/>
-    <item id="id297" href="images/48.jpeg" media-type="image/jpeg"/>
-    <item id="id295" href="images/49.jpeg" media-type="image/jpeg"/>
-    <item id="id294" href="images/50.jpeg" media-type="image/jpeg"/>
-    <item id="id293" href="images/51.jpeg" media-type="image/jpeg"/>
-    <item id="id290" href="images/52.jpeg" media-type="image/jpeg"/>
-    <item id="id287" href="images/53.jpeg" media-type="image/jpeg"/>
     <item id="id286" href="images/54.jpeg" media-type="image/jpeg"/>
-    <item id="id281" href="images/55.jpeg" media-type="image/jpeg"/>
-    <item id="id277" href="images/56.jpeg" media-type="image/jpeg"/>
     <item id="id273" href="images/57.jpeg" media-type="image/jpeg"/>
     <item id="id271" href="images/58.jpeg" media-type="image/jpeg"/>
-    <item id="id270" href="images/59.jpeg" media-type="image/jpeg"/>
-    <item id="id268" href="images/60.jpeg" media-type="image/jpeg"/>
     <item id="id266" href="images/61.jpeg" media-type="image/jpeg"/>
     <item id="id265" href="images/62.jpeg" media-type="image/jpeg"/>
-    <item id="id264" href="images/63.jpeg" media-type="image/jpeg"/>
-    <item id="id262" href="images/64.jpeg" media-type="image/jpeg"/>
     <item id="id261" href="images/65.jpeg" media-type="image/jpeg"/>
-    <item id="id260" href="images/66.jpeg" media-type="image/jpeg"/>
-    <item id="id256" href="images/67.jpeg" media-type="image/jpeg"/>
     <item id="id255" href="images/68.jpeg" media-type="image/jpeg"/>
-    <item id="id254" href="images/69.jpeg" media-type="image/jpeg"/>
-    <item id="id253" href="images/70.jpeg" media-type="image/jpeg"/>
     <item id="id247" href="images/71.jpeg" media-type="image/jpeg"/>
-    <item id="id246" href="images/72.jpeg" media-type="image/jpeg"/>
-    <item id="id2" href="NotoSerifSC-Medium.otf" media-type="application/vnd.ms-opentype"/>
+    <item id="id1" href="NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
   <spine toc="ncx" page-progression-direction="rtl">
     <itemref idref="titlepage"/>
