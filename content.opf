@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0"  encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
   <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
     <dc:title>古文观止（上下）</dc:title>
@@ -32,7 +32,7 @@
     <dc:subject>国学典藏</dc:subject>
     <dc:subject>選本</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">53d6e4dc-6169-4a77-a52f-302218dbb91a</dc:identifier>
+    <dc:identifier opf:scheme="calibre">ca9abe1b-083b-42b1-9374-62095d826ce4</dc:identifier>
     <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
     <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
     <meta name="calibre:timestamp" content="2022-05-24T13:44:09.382584+00:00"/>
@@ -291,7 +291,7 @@
     <item id="id247" href="images/71.jpeg" media-type="image/jpeg"/>
     <item id="id1" href="NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
-  <spine toc="ncx" page-progression-direction="rtl">
+  <spine toc="ncx" page-progression-direction="ltr">
     <itemref idref="titlepage"/>
     <itemref idref="id"/>
     <itemref idref="id239"/>
@@ -524,3 +524,4 @@
     <reference type="cover" href="titlepage.xhtml" title="Cover"/>
   </guide>
 </package>
+
