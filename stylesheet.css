@@ -65,9 +65,7 @@
   text-align: justify;
 }
 .chapter p {
-  /*display: block;
-  text-align: justify;*/
-  padding: 0 1% 0 1%;
+  padding: 10px 4% 0 4%;
 }
 .kindle-cn-heading {
   display: block;
