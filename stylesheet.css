@@ -31,8 +31,8 @@
 }
 .calibre5 {
   display: block;
-  text-indent: 2em;
-  margin: 1em 0;
+  /*text-indent: 2em;
+  margin: 1em 0;*/
 }
 .calibre6 {
   text-decoration: none;
@@ -65,7 +65,7 @@
   text-align: justify;
 }
 .chapter p {
-  padding: 10px 0 0 0;
+  padding: 10px 2.5em 0 2.5em;
 }
 .kindle-cn-heading {
   display: block;
@@ -118,8 +118,8 @@
   font-size: 85%;
   display: block;
   text-align: justify;
-  text-indent: 2.5em;
-  margin: 1em 0;
+  /*text-indent: 2.5em;
+  margin: 1em 0;*/
 }
 .kindle-cn-para-left-1 {
   display: block;
@@ -195,4 +195,3 @@
   float: right;
   margin-right: 0%;
 }
-
