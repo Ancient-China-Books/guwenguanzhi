@@ -117,9 +117,8 @@
   color: #069;
   font-size: 85%;
   display: block;
-  text-align: justify;
-  /*text-indent: 2.5em;
-  margin: 1em 0;*/
+  text-indent: 2.5em;
+  /*margin: 1em 0;*/
 }
 .kindle-cn-para-left-1 {
   display: block;
