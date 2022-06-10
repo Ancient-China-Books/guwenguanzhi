@@ -1,0 +1,12 @@
+@page {
+  margin-bottom: 5pt;
+  margin-top: 5pt;
+}
+
+@font-face {
+  src: local("Noto Serif TC Medium"), url(../Fonts/NotoSerifTC-Medium.otf);
+  font-family: 'Noto Serif TC Medium';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}

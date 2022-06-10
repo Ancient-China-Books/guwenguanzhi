@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: zip -r guwenguanzhi.epub content.opf cover.jpeg images META-INF mimetype page_styles.css stylesheet.css text titlepage.xhtml toc.ncx NotoS*
+        run: zip -r guwenguanzhi.epub META-INF mimetype OEBPS
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
