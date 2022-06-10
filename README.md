@@ -1,7 +1,9 @@
-# 古文觀止中華書局重製版
+# 古文觀止
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+基於「中華書局 一九五九年九月第一版」重製電子版。
 
 ## Contributors ✨
 
