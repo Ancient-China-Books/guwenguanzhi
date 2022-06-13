@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package version="2.0" unique-identifier="uuid_id" xmlns="http://www.idpf.org/2007/opf">
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>古文观止（上下）</dc:title>
-    <dc:creator opf:file-as="选, 吴楚材 &amp; 选, 吴调候" opf:role="aut">[清] 吴楚材 选</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="选, 吴楚材 &amp; 选, 吴调候">[清] 吴楚材 选</dc:creator>
     <dc:creator opf:role="aut">[清] 吴调候 选</dc:creator>
     <dc:contributor opf:role="bkp">calibre (5.43.0) [https://calibre-ebook.com]</dc:contributor>
     <dc:publisher>中华书局</dc:publisher>
@@ -15,6 +15,7 @@
 &lt;p&gt;至於攷訂之下，偶有所得，則亦謹附之，以備參究，不敢雷同附和，以取譏於大雅。若夫聲音之間，點畫之際，諸家或以為無益於至義而忽之，而不知童子之所肄習，終身勿能忘；況考試之時，一有不合，即遭擯斥，可不慎歟？余兩人之從事於茲也，有年矣！兢兢焉一義之未合於古，勿敢登也；一理之未欠慊於心，勿敢載也；一段落、一鉤勒之不軌於法度，勿敢襲也；一聲音、一點畫之不協於正韵，勿敢書也。 &lt;/p&gt;
 &lt;p&gt;山居寂寥，日點一蓺以課子弟，而非敢以此問世也；間有好事者有所許可，輒手錄數則以去，鄉先生見之者，必曰：「諸選之美者畢集，其缺者無不備，而譌者無不正，是集古文之成者也，觀止矣！宜付之剞劂，以公之於世。」余兩人默然相視良久，曰：「唯唯！弗敢當！弗敢當！誠若先生言，抑亦何敢自私。」退而輯平日之所課業者若干首，付諸梓人，以請政於海內君子云。 &lt;/p&gt;
 &lt;p&gt;康熙戊寅仲冬山陰 吳 乘權楚材、大職調侯 氏題於尺木堂。&lt;/p&gt;&lt;/div&gt;</dc:description>
+    <dc:date opf:event="modification">2022-06-10</dc:date>
     <dc:subject>国学</dc:subject>
     <dc:subject>经典</dc:subject>
     <dc:subject>散文</dc:subject>
@@ -32,7 +33,7 @@
     <dc:subject>国学典藏</dc:subject>
     <dc:subject>選本</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">92c92fa3-c4cf-4663-904f-9a3020717604</dc:identifier>
+    <dc:identifier opf:scheme="calibre">aebd9582-e096-4787-b41b-8cbd045208c5</dc:identifier>
     <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
     <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
     <meta content="2022-05-24T13:44:09.382584+00:00" name="calibre:timestamp"/>
@@ -44,7 +45,6 @@
     <meta content="1.0" name="calibre:series_index"/>
     <meta content="10.0" name="calibre:rating"/>
     <meta content="1.9.10" name="Sigil version"/>
-    <dc:date opf:event="modification" xmlns:opf="http://www.idpf.org/2007/opf">2022-06-10</dc:date>
   </metadata>
   <manifest>
     <item id="titlepage" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
@@ -277,15 +277,8 @@
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
     <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
     <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
-    <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
-    <item id="id391" href="Images/09.jpeg" media-type="image/jpeg"/>
-    <item id="id339" href="Images/29.jpeg" media-type="image/jpeg"/>
-    <item id="id325" href="Images/34.jpeg" media-type="image/jpeg"/>
-    <item id="id317" href="Images/40.jpeg" media-type="image/jpeg"/>
     <item id="id286" href="Images/54.jpeg" media-type="image/jpeg"/>
-    <item id="id273" href="Images/57.jpeg" media-type="image/jpeg"/>
-    <item id="id271" href="Images/58.jpeg" media-type="image/jpeg"/>
-    <item id="id265" href="Images/62.jpeg" media-type="image/jpeg"/>
+    <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
     <item id="id1" href="Fonts/NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
   <spine page-progression-direction="ltr" toc="ncx">
