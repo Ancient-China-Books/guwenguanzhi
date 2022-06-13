@@ -636,7 +636,7 @@
       </navPoint>
       <navPoint id="num_105" playOrder="105">
         <navLabel>
-          <text>晁錯論貴粟疏</text>
+          <text>鼂錯論貴粟疏</text>
         </navLabel>
         <content src="Text/part099.html"/>
       </navPoint>
@@ -1188,7 +1188,7 @@
       </navPoint>
       <navPoint id="num_197" playOrder="197">
         <navLabel>
-          <text>晁錯論</text>
+          <text>鼂錯論</text>
         </navLabel>
         <content src="Text/part187.html"/>
       </navPoint>
