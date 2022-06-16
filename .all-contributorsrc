@@ -13,6 +13,16 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "douglarek",
+      "name": "douglarek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1488134?v=4",
+      "profile": "https://blog.lingchao.xin",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
