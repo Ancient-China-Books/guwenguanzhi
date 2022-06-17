@@ -78,7 +78,7 @@
       </navPoint>
       <navPoint id="num_12" playOrder="12">
         <navLabel>
-          <text>季樑諫追楚師</text>
+          <text>季梁諫追楚師</text>
         </navLabel>
         <content src="Text/part011.html"/>
       </navPoint>
@@ -288,7 +288,7 @@
       </navPoint>
       <navPoint id="num_47" playOrder="47">
         <navLabel>
-          <text>裡革斷罟匡君</text>
+          <text>里革斷罟匡君</text>
         </navLabel>
         <content src="Text/part044.html"/>
       </navPoint>
@@ -642,7 +642,7 @@
       </navPoint>
       <navPoint id="num_106" playOrder="106">
         <navLabel>
-          <text>鄒陽獄中上樑王書</text>
+          <text>鄒陽獄中上梁王書</text>
         </navLabel>
         <content src="Text/part100.html"/>
       </navPoint>
@@ -942,7 +942,7 @@
       <content src="Text/part147.html"/>
       <navPoint id="num_156" playOrder="156">
         <navLabel>
-          <text>駁復仇議</text>
+          <text>駁復讎議</text>
         </navLabel>
         <content src="Text/part147.html"/>
       </navPoint>
