@@ -277,7 +277,6 @@
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
     <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
     <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
-    <item id="id286" href="Images/54.jpeg" media-type="image/jpeg"/>
     <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
     <item id="id1" href="Fonts/NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
