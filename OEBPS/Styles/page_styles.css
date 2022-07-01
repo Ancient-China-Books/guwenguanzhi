@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  src: local("Noto Serif TC Medium"), url(../Fonts/NotoSerifTC-Medium.otf);
-  font-family: 'Noto Serif TC Medium';
+  font-family: "Source Han Serif TW Medium";
+  src: url(../Fonts/SourceHanSerifTW-Medium.ttf) format("woff");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;

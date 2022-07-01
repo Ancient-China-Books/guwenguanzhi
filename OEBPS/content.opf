@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0"  encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>古文观止（上下）</dc:title>
@@ -33,7 +33,7 @@
     <dc:subject>国学典藏</dc:subject>
     <dc:subject>選本</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">aebd9582-e096-4787-b41b-8cbd045208c5</dc:identifier>
+    <dc:identifier opf:scheme="calibre">cd53b5bf-0b1c-47f3-b839-dc2feb504a12</dc:identifier>
     <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
     <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
     <meta content="2022-05-24T13:44:09.382584+00:00" name="calibre:timestamp"/>
@@ -278,7 +278,7 @@
     <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
     <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
     <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
-    <item id="id1" href="Fonts/NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
+    <item id="id43" href="Fonts/SourceHanSerifTW-Medium.ttf" media-type="application/x-font-truetype"/>
   </manifest>
   <spine page-progression-direction="ltr" toc="ncx">
     <itemref idref="titlepage"/>
@@ -513,3 +513,4 @@
     <reference type="cover" title="Cover" href="Text/titlepage.xhtml"/>
   </guide>
 </package>
+
