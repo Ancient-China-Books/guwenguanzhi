@@ -19,13 +19,13 @@
     </navPoint>
     <navPoint id="num_2" playOrder="2">
       <navLabel>
-        <text>序</text>
+        <text>序一</text>
       </navLabel>
       <content src="Text/part002.html"/>
     </navPoint>
     <navPoint id="num_3" playOrder="3">
       <navLabel>
-        <text>序</text>
+        <text>序二</text>
       </navLabel>
       <content src="Text/part003.html"/>
     </navPoint>
