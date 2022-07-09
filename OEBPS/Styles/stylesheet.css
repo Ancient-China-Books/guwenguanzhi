@@ -182,11 +182,19 @@
   display: block;
   font-size: x-large;
   line-height: 110%;
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 .lcx_jiao {
   color: #966;
   float: right;
   margin-right: 0%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  padding: 0;
 }
 
