@@ -1,4 +1,4 @@
-image: busybox
+image: ubuntu:latest
 
 pages:
   stage: deploy
@@ -9,6 +9,16 @@ pages:
   artifacts:
     paths:
     - ./
-    expire_in: 1 day
+  only:
+    - master
+
+make-epub:
+  script:
+    - apt update -y && apt install zip -y
+    - zip -r 古文觀止.epub META-INF mimetype OEBPS
+  artifacts:
+    paths:
+    - ./*.epub
+    expire_in: never
   only:
     - master
