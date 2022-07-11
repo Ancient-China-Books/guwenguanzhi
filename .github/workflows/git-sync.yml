@@ -1,0 +1,12 @@
+on: push
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "Ancient-China-Books/guwenguanzhi"
+          source_branch: "master"
+          destination_repo: "https://${{ secrets.GITLAB_USERNAME }}:${{ secrets.GITLAB_TOKEN }}@gitlab.com/ancient-china-books/guwenguanzhi.git"
+          destination_branch: "master"
