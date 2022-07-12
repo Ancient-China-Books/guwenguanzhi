@@ -25,3 +25,10 @@ jobs:
           title: "Snapshot build"
           files: |
             guwenguanzhi.epub
+      - name: Sync to Google drive
+        uses: wei/rclone@v1
+        env:
+         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+         RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
+        with:
+          args: copyto guwenguanzhi.epub gdrive:/Ancient-China-Books/古文觀止.epub
