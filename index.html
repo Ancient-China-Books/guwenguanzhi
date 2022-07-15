@@ -3,20 +3,56 @@
 
 <head>
   <title>古文觀止目錄</title>
-  <link href="OEBPS/Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
-  <link href="OEBPS/Styles/page_styles.css" rel="stylesheet" type="text/css"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <style type="text/css">
-  li {
-    list-style-type: none;
-    padding-left: 2em;
-    margin-left: 0;
+  @font-face {
+    src: local("Noto Serif TC Medium"), url(OEBPS/Fonts/NotoSerifTC-Medium.otf);
+    font-family: 'Noto Serif TC Medium';
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
   }
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    color: red;
-  }
+
+   body {
+     font-family: "Noto Serif TC Medium", serif;
+     font-size: 110%;
+     line-height: 1.7;
+     padding-left: 0;
+     padding-right: 0;
+     text-align: left;
+     writing-mode: horizontal-tb;
+     -epub-writing-mode: horizontal-tb;
+     -webkit-writing-mode: horizontal-tb;
+     line-break: auto;
+     -webkit-line-break: auto;
+   }
+   .calibre {
+     text-align: justify;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+   }
+   @media screen and (max-device-width: 480px) {
+     .calibre {
+       text-align: justify;
+       margin-left: auto;
+       margin-right: auto;
+       width: 87.36%;
+       padding-left: 1.82%;
+       padding-right: 1.82%;
+     }
+   }
+   li {
+     list-style-type: none;
+     padding-left: 2em;
+     margin-left: 0;
+   }
+   a {
+     text-decoration: none;
+   }
+   a:hover {
+     color: red;
+   }
   </style>
 </head>
 
