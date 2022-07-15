@@ -1,9 +1,8 @@
 .calibre {
-  font-family: "Noto Serif TC Medium", "Noto Serif TC", serif;
-  font-size: 110%;
-  line-height: 1.3;
-  padding-left: 0;
-  padding-right: 0;
+  font-family: "Noto Serif TC Medium", serif;
+  letter-spacing: 1px;
+  font-size: 100%;
+  line-height: 1.7;
   line-break: auto;
   text-align: left;
   writing-mode: horizontal-tb;
@@ -14,7 +13,6 @@
   -webkit-margin-before: 0.2em;
   -webkit-margin-after: 0.2em;
   -webkit-line-break: auto;
-
 }
 .calibre1 {
   display: block;
@@ -36,7 +34,6 @@
 }
 .calibre5 {
   display: block;
-  text-indent: 2em;
   /*margin: 1em 0;*/
 }
 .calibre6 {
@@ -64,10 +61,6 @@
   font-size: 0.9em;
   line-height: normal;
   vertical-align: super;
-}
-.chapter {
-  display: block;
-  text-align: justify;
 }
 .kindle-cn-heading {
   display: block;
@@ -112,25 +105,21 @@
 .kindle-cn-para-center {
   display: block;
   text-align: center;
-  text-indent: 0;
   margin: 1em 0;
 }
 .kindle-cn-para-left {
   color: #069;
   font-size: 85%;
   display: block;
-  text-indent: 2em;
 }
 .kindle-cn-para-left-1 {
   display: block;
   text-align: justify;
-  text-indent: 2em;
   margin: 1em 0;
 }
 .kindle-cn-signature {
   display: block;
   text-align: right;
-  text-indent: 2em;
   margin: 1em 0;
 }
 .kindle-cn-toc-level {
@@ -196,5 +185,24 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   padding: 0;
+}
+.chapter {
+  text-align: justify;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-device-width: 480px) {
+  .chapter {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.36%;
+    padding-left: 1.82%;
+    padding-right: 1.82%;
+  }
+  .chapter p {
+    padding: 15px;
+  }
 }
 
