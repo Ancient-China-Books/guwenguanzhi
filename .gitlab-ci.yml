@@ -16,6 +16,9 @@ make-epub:
   script:
     - apt update -y && apt install zip -y
     - zip -r 古文觀止.epub META-INF mimetype OEBPS
+    - sed -i 's/horizontal-tb/vertical-rl/g' OEBPS/Styles/*.css
+    - sed -i 's/page-progression-direction="ltr"/page-progression-direction="rtl"/g' OEBPS/content.opf
+    - zip -r 古文觀止-豎排.epub META-INF mimetype OEBPS
   artifacts:
     paths:
     - ./*.epub
