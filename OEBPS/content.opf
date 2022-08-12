@@ -1,12 +1,12 @@
 <?xml version="1.0"  encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uEI6gM58iDi4DzSCoOkNIZ3">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>古文观止</dc:title>
     <dc:creator opf:role="aut" opf:file-as="选, 吴楚材 &amp; 选, 吴调候">[清] 吴楚材 选</dc:creator>
     <dc:creator opf:role="aut">[清] 吴调候 选</dc:creator>
-    <dc:contributor opf:role="bkp">calibre (5.44.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:contributor opf:role="bkp">calibre (6.2.1) [https://calibre-ebook.com]</dc:contributor>
     <dc:publisher>中华书局</dc:publisher>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">bba97d0d-0709-45a9-9636-335a0a414beb</dc:identifier>
+    <dc:identifier id="uEI6gM58iDi4DzSCoOkNIZ3" opf:scheme="uuid">uEI6gM58iDi4DzSCoOkNIZ3</dc:identifier>
     <dc:date>1959-08-31T16:00:00+00:00</dc:date>
     <dc:description>&lt;div&gt;
 &lt;p&gt;《古文观止》系古代散文选编总集,12卷,成书于康熙三十四年(1695)以前。该书收录了我国古代上起东周下至明末的散文222篇,虽比较一些选本所选篇目不算多,但它能重其所重,轻其所轻,故该书问世至今300年来风行不衰,是清代以来流传广泛影响大的散文选本。 “观止”二字出左传,意谓:读了这些尽美尽善的文章,别的文章就用不着去读了。 &lt;/p&gt;
@@ -33,7 +33,7 @@
     <dc:subject>国学典藏</dc:subject>
     <dc:subject>選本</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">06fff4c6-cccc-46c4-a0c1-d07dfbde9a89</dc:identifier>
+    <dc:identifier opf:scheme="calibre">df2c6073-4b05-4e6f-bd82-bce5b8a0c9f4</dc:identifier>
     <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
     <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
     <meta content="2022-05-24T13:44:09.382584+00:00" name="calibre:timestamp"/>
@@ -47,7 +47,6 @@
     <meta content="1.9.10" name="Sigil version"/>
   </metadata>
   <manifest>
-    <item id="titlepage" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
     <item id="id239" href="Text/part000.html" media-type="application/xhtml+xml"/>
     <item id="id238" href="Text/part001.html" media-type="application/xhtml+xml"/>
     <item id="id237" href="Text/part002.html" media-type="application/xhtml+xml"/>
@@ -280,7 +279,6 @@
     <item id="id1" href="Fonts/NotoSerifTC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
   <spine page-progression-direction="ltr" toc="ncx">
-    <itemref idref="titlepage"/>
     <itemref idref="id239"/>
     <itemref idref="id238"/>
     <itemref idref="id237"/>
@@ -508,6 +506,5 @@
     <itemref idref="id3"/>
   </spine>
   <guide>
-    <reference type="cover" title="Cover" href="Text/titlepage.xhtml"/>
-  </guide>
+    </guide>
 </package>
