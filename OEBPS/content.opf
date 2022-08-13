@@ -1,47 +1,27 @@
 <?xml version="1.0"  encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uEI6gM58iDi4DzSCoOkNIZ3">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <dc:title>古文观止</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="选, 吴楚材 &amp; 选, 吴调候">[清] 吴楚材 选</dc:creator>
-    <dc:creator opf:role="aut">[清] 吴调候 选</dc:creator>
-    <dc:contributor opf:role="bkp">calibre (6.2.1) [https://calibre-ebook.com]</dc:contributor>
-    <dc:publisher>中华书局</dc:publisher>
+    <dc:title>古文觀止</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="吳楚材 &amp; 吳調侯">吳楚材</dc:creator>
+    <dc:creator opf:role="aut">吳調侯</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (6.3.0) [https://calibre-ebook.com]</dc:contributor>
     <dc:identifier id="uEI6gM58iDi4DzSCoOkNIZ3" opf:scheme="uuid">uEI6gM58iDi4DzSCoOkNIZ3</dc:identifier>
-    <dc:date>1959-08-31T16:00:00+00:00</dc:date>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
     <dc:description>&lt;div&gt;
-&lt;p&gt;《古文观止》系古代散文选编总集,12卷,成书于康熙三十四年(1695)以前。该书收录了我国古代上起东周下至明末的散文222篇,虽比较一些选本所选篇目不算多,但它能重其所重,轻其所轻,故该书问世至今300年来风行不衰,是清代以来流传广泛影响大的散文选本。 “观止”二字出左传,意谓:读了这些尽美尽善的文章,别的文章就用不着去读了。 &lt;/p&gt;
-&lt;p&gt;「原序」 &lt;/p&gt;
-&lt;p&gt;古文宜選乎？曰：「無庸也！」琳瑯滿目，美不勝收，則選尚已。古文至今日，操選政者，代有其人，駸駸乎有積薪之歎矣！尚宜選乎？曰：「無庸也！」詳略互見，醇疵錯陳，則選又尚已。且余兩人非敢言選也，即焉云耳！即之奈何？集古人之文集，古今人之選而略者、詳之，繁者、簡之，散者、合之，舛錯者、釐定之，差譌者、校正之云爾。蓋諸選家各有精思深意，以抉古人之奧，讀之者取此置彼，則美者或遺；一概觀覽，則勞於睹記，此余兩人所以彙而集之也。 &lt;/p&gt;
-&lt;p&gt;至於攷訂之下，偶有所得，則亦謹附之，以備參究，不敢雷同附和，以取譏於大雅。若夫聲音之間，點畫之際，諸家或以為無益於至義而忽之，而不知童子之所肄習，終身勿能忘；況考試之時，一有不合，即遭擯斥，可不慎歟？余兩人之從事於茲也，有年矣！兢兢焉一義之未合於古，勿敢登也；一理之未欠慊於心，勿敢載也；一段落、一鉤勒之不軌於法度，勿敢襲也；一聲音、一點畫之不協於正韵，勿敢書也。 &lt;/p&gt;
-&lt;p&gt;山居寂寥，日點一蓺以課子弟，而非敢以此問世也；間有好事者有所許可，輒手錄數則以去，鄉先生見之者，必曰：「諸選之美者畢集，其缺者無不備，而譌者無不正，是集古文之成者也，觀止矣！宜付之剞劂，以公之於世。」余兩人默然相視良久，曰：「唯唯！弗敢當！弗敢當！誠若先生言，抑亦何敢自私。」退而輯平日之所課業者若干首，付諸梓人，以請政於海內君子云。 &lt;/p&gt;
-&lt;p&gt;康熙戊寅仲冬山陰 吳 乘權楚材、大職調侯 氏題於尺木堂。&lt;/p&gt;&lt;/div&gt;</dc:description>
+&lt;p&gt;清康熙年間由吳楚材、吳調候所選的古文集，上自先秦，下至明代，每篇皆有簡明的評註。&lt;/p&gt;&lt;/div&gt;</dc:description>
     <dc:date opf:event="modification">2022-06-10</dc:date>
-    <dc:subject>国学</dc:subject>
-    <dc:subject>经典</dc:subject>
-    <dc:subject>散文</dc:subject>
-    <dc:subject>中国</dc:subject>
-    <dc:subject>中国古典</dc:subject>
-    <dc:subject>历史</dc:subject>
-    <dc:subject>古典文学</dc:subject>
-    <dc:subject>文学</dc:subject>
     <dc:subject>古籍</dc:subject>
-    <dc:subject>中国文学</dc:subject>
-    <dc:subject>古文</dc:subject>
-    <dc:subject>文选</dc:subject>
-    <dc:subject>古文观止</dc:subject>
-    <dc:subject>上海古籍出版社</dc:subject>
-    <dc:subject>国学典藏</dc:subject>
-    <dc:subject>選本</dc:subject>
+    <dc:subject>集部</dc:subject>
+    <dc:subject>文選</dc:subject>
+    <dc:subject>古文觀止</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">df2c6073-4b05-4e6f-bd82-bce5b8a0c9f4</dc:identifier>
-    <dc:identifier opf:scheme="NEW_DOUBAN">1146537</dc:identifier>
-    <dc:identifier opf:scheme="ISBN">9787101041415</dc:identifier>
+    <dc:identifier opf:scheme="calibre">2054a3fe-cb1a-45c6-8205-6ecf5922515d</dc:identifier>
     <meta content="2022-05-24T13:44:09.382584+00:00" name="calibre:timestamp"/>
-    <meta content="古文观止" name="calibre:title_sort"/>
+    <meta content="古文觀止" name="calibre:title_sort"/>
     <meta name="cover" content="cover"/>
     <meta content="horizontal-lr" name="primary-writing-mode"/>
-    <meta content="{&quot;[清] 吴楚材 选&quot;: &quot;&quot;, &quot;[清] 吴调候 选&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
-    <meta content="国学典藏" name="calibre:series"/>
+    <meta content="{&quot;吳楚材&quot;: &quot;&quot;, &quot;吳調侯&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="古文選集" name="calibre:series"/>
     <meta content="1.0" name="calibre:series_index"/>
     <meta content="10.0" name="calibre:rating"/>
     <meta content="1.9.10" name="Sigil version"/>
