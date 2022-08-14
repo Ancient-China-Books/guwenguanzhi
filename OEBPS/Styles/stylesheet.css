@@ -208,4 +208,6 @@ hr {
     padding-right: 1.82%;
   }
 }
-
+.shu-ming {
+  text-decoration: currentColor wavy underline 1px;
+}
