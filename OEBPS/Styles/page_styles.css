@@ -4,8 +4,15 @@
 }
 
 @font-face {
-  src: local("Noto Serif TC Medium"), url(../Fonts/NotoSerifTC-Medium.otf);
-  font-family: 'Noto Serif TC Medium';
+  src: local("Noto Serif SC Medium"), url(../Fonts/NotoSerifSC-Medium.otf);
+  font-family: 'Noto Serif SC Medium';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  src: url(../Fonts/biaodian.otf);
+  font-family: 'biaodian';
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
