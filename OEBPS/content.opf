@@ -2,9 +2,9 @@
 <package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uEI6gM58iDi4DzSCoOkNIZ3">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>古文觀止</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="吳楚材 &amp; 吳調侯">吳楚材</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="清·吳楚材 &amp; 吳調侯">清·吳楚材</dc:creator>
     <dc:creator opf:role="aut">吳調侯</dc:creator>
-    <dc:contributor opf:role="bkp">calibre (6.3.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:contributor opf:role="bkp">calibre (6.4.0) [https://calibre-ebook.com]</dc:contributor>
     <dc:identifier id="uEI6gM58iDi4DzSCoOkNIZ3" opf:scheme="uuid">uEI6gM58iDi4DzSCoOkNIZ3</dc:identifier>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
     <dc:description>&lt;div&gt;
@@ -15,12 +15,12 @@
     <dc:subject>文選</dc:subject>
     <dc:subject>古文觀止</dc:subject>
     <dc:language>zh-TW</dc:language>
-    <dc:identifier opf:scheme="calibre">2054a3fe-cb1a-45c6-8205-6ecf5922515d</dc:identifier>
+    <dc:identifier opf:scheme="calibre">c1312b9b-066a-446c-b991-de807719c288</dc:identifier>
     <meta content="2022-05-24T13:44:09.382584+00:00" name="calibre:timestamp"/>
     <meta content="古文觀止" name="calibre:title_sort"/>
     <meta name="cover" content="cover"/>
     <meta content="horizontal-lr" name="primary-writing-mode"/>
-    <meta content="{&quot;吳楚材&quot;: &quot;&quot;, &quot;吳調侯&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+    <meta content="{&quot;清·吳楚材&quot;: &quot;&quot;, &quot;吳調侯&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
     <meta content="古文選集" name="calibre:series"/>
     <meta content="1.0" name="calibre:series_index"/>
     <meta content="10.0" name="calibre:rating"/>
@@ -256,8 +256,8 @@
     <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
     <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
     <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
-    <item id="noto-sc" href="Fonts/NotoSerifSC-Medium.otf" media-type="application/vnd.ms-opentype"/>
     <item id="biaodian" href="Fonts/biaodian.otf" media-type="application/vnd.ms-opentype"/>
+    <item id="noto-sc" href="Fonts/NotoSerifSC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
   <spine page-progression-direction="ltr" toc="ncx">
     <itemref idref="id239"/>
