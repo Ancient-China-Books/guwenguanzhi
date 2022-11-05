@@ -256,10 +256,9 @@
     <item id="page_css" href="Styles/page_styles.css" media-type="text/css"/>
     <item id="css" href="Styles/stylesheet.css" media-type="text/css"/>
     <item id="cover" href="Images/cover.jpeg" media-type="image/jpeg"/>
-    <item id="biaodian" href="Fonts/biaodian.otf" media-type="application/vnd.ms-opentype"/>
     <item id="noto-sc" href="Fonts/NotoSerifSC-Medium.otf" media-type="application/vnd.ms-opentype"/>
   </manifest>
-  <spine page-progression-direction="ltr" toc="ncx">
+  <spine page-progression-direction="rtl" toc="ncx">
     <itemref idref="id239"/>
     <itemref idref="id238"/>
     <itemref idref="id237"/>
