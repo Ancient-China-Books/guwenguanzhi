@@ -167,18 +167,7 @@ html {
   text-align: justify;
   margin: 0;
 }
-.title {
-  display: block;
-  line-height: 120%;
-  font-size: large;
-  margin: 1em 0 0.5em 1.5em;
-}
-.juan {
-  display: block;
-  font-size: x-large;
-  line-height: 110%;
-  margin: 1em 0 0 0;
-}
+
 .lcx_jiao {
   color: #966;
   float: right;
@@ -191,6 +180,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   padding: 0;
+  clear: both;
 }
 .chapter {
   text-align: justify;
@@ -211,4 +201,16 @@ hr {
 .shu-ming {
   text-decoration: #777 wavy underline;
   text-decoration-thickness: 1px;
+}
+h2 {
+  font-size: large;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: x-large;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
 }
