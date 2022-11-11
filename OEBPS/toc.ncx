@@ -216,7 +216,7 @@
       </navPoint>
       <navPoint id="num_35" playOrder="35">
         <navLabel>
-          <text>子產論尹何為邑</text>
+          <text>子產論尹何爲邑</text>
         </navLabel>
         <content src="Text/part032.html"/>
       </navPoint>
@@ -738,7 +738,7 @@
       </navPoint>
       <navPoint id="num_122" playOrder="122">
         <navLabel>
-          <text>為徐敬業討武曌檄</text>
+          <text>爲徐敬業討武曌檄</text>
         </navLabel>
         <content src="Text/part114.html"/>
       </navPoint>
