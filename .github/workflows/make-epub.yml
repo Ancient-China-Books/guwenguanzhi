@@ -21,14 +21,7 @@ jobs:
           sed -i 's/vertical-rl/horizontal-tb/g' OEBPS/Styles/*.css
           sed -i 's/page-progression-direction="rtl"/page-progression-direction="ltr"/g' OEBPS/content.opf
           zip -r guwenguanzhi.epub META-INF mimetype OEBPS
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: false
-          title: "Snapshot build"
-          files: |
-            *.epub
+
       - name: Sync to Google drive
         uses: wei/rclone@v1
         env:
