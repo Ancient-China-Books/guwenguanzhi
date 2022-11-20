@@ -43,17 +43,17 @@ jobs:
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
           args: copyto guwenguanzhi-vst.epub gdrive:/古籍共享电子书计划/古文觀止-豎排.epub
-      - name: Sync to Freemdict
+      - name: Sync to Onedrive
         uses: wei/rclone@v1
         env:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto guwenguanzhi.epub freemdict:/古籍共享电子书计划/古文觀止.epub
-      - name: Sync vst to Freemdict
+          args: copyto guwenguanzhi.epub onedrive:/古籍共享电子书计划/古文觀止.epub
+      - name: Sync vst to Onedrive
         uses: wei/rclone@v1
         env:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto guwenguanzhi-vst.epub freemdict:/古籍共享电子书计划/古文觀止-豎排.epub
+          args: copyto guwenguanzhi-vst.epub onedrive:/古籍共享电子书计划/古文觀止-豎排.epub
