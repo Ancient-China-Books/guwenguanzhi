@@ -11,9 +11,9 @@ html {
   line-height: 1.7;
   line-break: auto;
   text-align: left;
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  -epub-writing-mode: vertical-rl;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode: horizontal-tb;
   -webkit-margin-start: 1.5em;
   -webkit-margin-end: 0.8em;
   -webkit-margin-before: 0.2em;
