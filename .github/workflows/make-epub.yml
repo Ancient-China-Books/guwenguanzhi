@@ -22,31 +22,31 @@ jobs:
           sed -i 's/page-progression-direction="rtl"/page-progression-direction="ltr"/g' OEBPS/content.opf
           zip -r guwenguanzhi.epub META-INF mimetype OEBPS
 
-      - name: Sync to Google drive
-        uses: wei/rclone@v1
-        env:
-         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
-         RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
-        with:
-          args: copyto guwenguanzhi.epub gdrive:/古籍共享电子书计划/古文觀止.epub
-      - name: Sync vst to Google drive
-        uses: wei/rclone@v1
-        env:
-         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
-         RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
-        with:
-          args: copyto guwenguanzhi-vst.epub gdrive:/古籍共享电子书计划/古文觀止-豎排.epub
-      - name: Sync to Onedrive
-        uses: wei/rclone@v1
-        env:
-         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
-         RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
-        with:
-          args: copyto guwenguanzhi.epub onedrive:/古籍共享电子书计划/古文觀止.epub
-      - name: Sync vst to Onedrive
-        uses: wei/rclone@v1
-        env:
-         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
-         RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
-        with:
-          args: copyto guwenguanzhi-vst.epub onedrive:/古籍共享电子书计划/古文觀止-豎排.epub
+      # - name: Sync to Google drive
+      #   uses: wei/rclone@v1
+      #   env:
+      #    RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+      #    RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
+      #   with:
+      #     args: copyto guwenguanzhi.epub gdrive:/古籍共享电子书计划/古文觀止.epub
+      # - name: Sync vst to Google drive
+      #   uses: wei/rclone@v1
+      #   env:
+      #    RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+      #    RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
+      #   with:
+      #     args: copyto guwenguanzhi-vst.epub gdrive:/古籍共享电子书计划/古文觀止-豎排.epub
+      # - name: Sync to Onedrive
+      #   uses: wei/rclone@v1
+      #   env:
+      #    RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+      #    RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
+      #   with:
+      #     args: copyto guwenguanzhi.epub onedrive:/古籍共享电子书计划/古文觀止.epub
+      # - name: Sync vst to Onedrive
+      #   uses: wei/rclone@v1
+      #   env:
+      #    RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+      #    RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
+      #   with:
+      #     args: copyto guwenguanzhi-vst.epub onedrive:/古籍共享电子书计划/古文觀止-豎排.epub
