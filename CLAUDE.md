@@ -89,7 +89,7 @@ When translating content for this project:
 1. **Translation Placement**: Translations should be placed paragraph by paragraph after each original paragraph, using orange/brown text color as shown in the reference image
 2. **Font Size**: Translation text should be one size smaller than the original text
 3. **Style Consistency**: Translation styles should be unified through CSS modifications in `OEBPS/Styles/` directory, with HTML files in `Text/` directory referencing these styles
-4. **Language Style**: Translations MUST use Simplified Chinese (简体中文) and pursue accuracy, faithfulness, and elegance (信达雅), conforming to modern Chinese conventions. Use modern vernacular Chinese (现代白话文) and avoid mixing classical Chinese expressions
+4. **Language Style**: Translations MUST use Simplified Chinese (简体中文) and pursue accuracy, faithfulness, and elegance (信达雅), conforming to modern Chinese conventions. Use modern vernacular Chinese (现代白话文) and avoid mixing classical Chinese expressions. Use `opencc -c t2s` command to verify that all translation text is in simplified Chinese
 5. **Formatting**: Book titles, place names, and person names should use proper symbols, with consistent typography formatting
 6. **Source Preservation**: Never modify the original text (even if the original text contains errors; if there are questions or unclear parts, ask the user)
 7. **Paragraph Structure**: Do not modify the original paragraph formatting and structure
