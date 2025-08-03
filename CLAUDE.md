@@ -101,7 +101,8 @@ When translating content for this project:
     - Proper rendering of specialized terms and names
     - Consistency with translation guidelines
     - Any mismatched or missing content
-12. **Font Subsetting (MANDATORY)**: After translating any HTML files, you MUST ALWAYS execute the following command to regenerate the subset font: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`. This step is REQUIRED and must not be skipped. After running this command, commit the updated font file along with the translation.
+12. **Punctuation**: Translations should use punctuation exactly as it appears in the original text (翻译使用的标点悉遵原文)
+13. **Font Subsetting (MANDATORY)**: After translating any HTML files, you MUST ALWAYS execute the following command to regenerate the subset font: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`. This step is REQUIRED and must not be skipped. After running this command, commit the updated font file along with the translation.
 
 ## Translation Workflow (MUST FOLLOW)
 
