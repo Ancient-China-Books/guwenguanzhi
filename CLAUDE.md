@@ -95,7 +95,7 @@ When translating content for this project:
 7. **Paragraph Structure**: Do not modify the original paragraph formatting and structure
 8. **Blockquote Removal**: Before translating, if there are blockquote tags in the HTML, these tags should be removed and replaced with regular paragraph (`<p>`) tags
 9. **Translation Quality**: Think carefully and thoroughly when translating - consider context, meaning, and appropriate modern Chinese expressions
-10. **Jiazhu Exclusion**: Do not translate jiazhu (annotation) content marked with `class="jiazhu"`
+10. **Jiazhu Exclusion**: Do not translate jiazhu (annotation) content marked with `class="zhu"` or `class="kindle-cn-para-left"`
 11. **Quality Control (MANDATORY)**: After completing the translation, you MUST perform a secondary review to verify that the original text and translation match properly. Check for:
     - Accuracy of meaning and context
     - Proper rendering of specialized terms and names

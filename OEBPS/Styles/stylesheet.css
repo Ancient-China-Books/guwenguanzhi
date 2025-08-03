@@ -214,3 +214,9 @@ h1 {
   margin: 0;
   padding: 0;
 }
+.translation {
+  display: block;
+  color: #CC6600;
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
