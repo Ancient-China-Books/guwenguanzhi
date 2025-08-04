@@ -101,7 +101,17 @@ When translating content for this project:
     - Proper rendering of specialized terms and names
     - Consistency with translation guidelines
     - Any mismatched or missing content
-12. **Punctuation**: Translations should use punctuation exactly as it appears in the original text (翻译使用的标点悉遵原文)
+12. **Punctuation**: Translations MUST use punctuation exactly as it appears in the original text (翻译使用的标点符号悉遵原文). This includes:
+    - Chinese quotation marks: Use 「」 (not "" or "")
+    - Chinese period: Use 。 (not .)
+    - Chinese comma: Use ， (not ,)
+    - Chinese book title marks: Use 《》 (not italics or other formatting)
+    - Chinese enumeration comma: Use 、 (not ,)
+    - Chinese semicolon: Use ； (not ;)
+    - Chinese colon: Use ： (not :)
+    - Chinese question mark: Use ？ (not ?)
+    - Chinese exclamation mark: Use ！ (not !)
+    - DO NOT mix Chinese and Western punctuation marks in the same text
 13. **Font Subsetting (MANDATORY)**: After translating any HTML files, you MUST ALWAYS execute the following command to regenerate the subset font: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`. This step is REQUIRED and must not be skipped. After running this command, commit the updated font file along with the translation.
 
 ## Translation Workflow (MUST FOLLOW)
