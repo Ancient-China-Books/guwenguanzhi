@@ -125,3 +125,5 @@ When asked to translate any HTML file:
 6. Push all changes to remote
 
 **IMPORTANT**: Both the quality control review and font subsetting steps are NOT OPTIONAL and must be completed for every translation task.
+
+14. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
