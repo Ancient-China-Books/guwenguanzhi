@@ -72,8 +72,6 @@ Layout switching is handled via CSS `writing-mode` property changes during build
 When editing content:
 - HTML files are in `OEBPS/Text/` directory
 - Maintain XHTML 1.1 compliance
-- Use `.jiazhu` class for annotations (blue text)
-- Use `.jiaozhusup` class for superscript notes (red text)
 - Images should be referenced from `../Images/` relative path
 
 ## File Size Considerations
