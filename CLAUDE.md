@@ -95,7 +95,7 @@ When translating content for this project:
 7. **Paragraph Structure**: Do not modify the original paragraph formatting and structure
 8. **Blockquote Removal**: Before translating, if there are blockquote tags in the HTML, these tags should be removed and replaced with regular paragraph (`<p>`) tags
 9. **Translation Quality**: Think carefully and thoroughly when translating - consider context, meaning, and appropriate modern Chinese expressions
-10. **Jiazhu Exclusion**: Do not translate jiazhu (annotation) content marked with `class="zhu"` or `class="kindle-cn-para-left"`
+10. **Jiazhu Exclusion (CRITICAL)**: NEVER translate jiazhu (annotation) content marked with `class="zhu"` or `class="kindle-cn-para-left"`. These are scholarly annotations and commentary that must remain in original form. Always identify and exclude this content BEFORE beginning translation work.
 11. **Quality Control (MANDATORY)**: After completing the translation, you MUST perform a secondary review to verify that the original text and translation match properly. Check for:
     - Accuracy of meaning and context
     - Proper rendering of specialized terms and names
@@ -116,14 +116,29 @@ When translating content for this project:
 
 ## Translation Workflow (MUST FOLLOW)
 
-When asked to translate any HTML file:
-1. Translate the content following the guidelines above
-2. **MANDATORY**: Perform secondary review to verify original text and translation match properly
-3. Commit the translated HTML file
-4. **IMMEDIATELY** run the font subsetting command: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
-5. Commit the updated font file
-6. Push all changes to remote
+When asked to translate any HTML file, follow this strict workflow:
 
-**IMPORTANT**: Both the quality control review and font subsetting steps are NOT OPTIONAL and must be completed for every translation task.
+### Phase 1: Pre-Translation Analysis (MANDATORY)
+1. **Read the HTML file** to understand overall structure and content
+2. **Identify annotation content** using Grep tool to find ALL instances of:
+   - `class="zhu"` (classical annotations)
+   - `class="kindle-cn-para-left"` (commentary content)
+3. **Mark these as "DO NOT TRANSLATE"** - create a mental/written list of content to exclude
+4. **Identify translatable paragraphs** - only content in regular `<p class="calibre5">` tags without annotation classes
+
+### Phase 2: Translation Execution
+5. **Translate only the identified translatable content** following all translation guidelines
+6. **Skip all annotation content** identified in Phase 1 - do not translate anything marked with excluded classes
+7. **Add translations as independent paragraphs** with `<p class="translation">` class
+
+### Phase 3: Quality Control & Finalization
+8. **MANDATORY Secondary Review**: Verify that:
+   - No annotation content (`class="zhu"` or `class="kindle-cn-para-left"`) was translated
+   - All regular paragraphs have accurate translations
+   - Translation quality meets all guidelines
+9. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
+10. **Single commit**: Include both translated HTML file and updated font file
+
+**CRITICAL**: Phase 1 annotation identification is MANDATORY and must be completed before any translation work begins. Failure to follow this workflow may result in incorrect translation of annotation content.
 
 14. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
