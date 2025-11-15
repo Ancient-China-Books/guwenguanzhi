@@ -159,3 +159,5 @@ When asked to translate any HTML file, follow this strict workflow:
 **CRITICAL**: Phase 1 annotation identification is MANDATORY and must be completed before any translation work begins. Failure to follow this workflow may result in incorrect translation of annotation content.
 
 13. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, git diff verification, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
+
+14. **Push to Remote (POLITE INQUIRY)**: After successfully creating the local commit, politely ask the user if they would like to push the changes to the remote repository. Do not push automatically. Use a friendly tone such as: "Translation completed and committed successfully! Would you like me to push these changes to the remote repository?"
