@@ -128,19 +128,34 @@ When asked to translate any HTML file, follow this strict workflow:
 5. **Translate only the identified translatable content** following all translation guidelines
 6. **Skip all annotation content** identified in Phase 1 - do not translate anything marked with excluded classes
 7. **Add translations as independent paragraphs** with `<p class="translation">` class
-8. **CRITICAL - Use Edit Tool Only**: You MUST use the Edit tool to insert translation paragraphs. NEVER use the Write tool to replace the entire file. The Edit tool ensures you only add content without modifying the original text. When using Edit:
-   - The `old_string` should be the EXACT original paragraph (including all `<span class="zhu">` tags)
-   - The `new_string` should be the original paragraph PLUS the new `<p class="translation">` paragraph immediately after it
-   - This ensures zero modification to the original text - you are only inserting new content after it
+8. **CRITICAL - Use Edit Tool Only & Git Diff Requirement**:
+   - **ALWAYS use the Edit tool** to insert translation paragraphs, one paragraph at a time
+   - **NEVER use the Write tool** - it will cause the entire file to show as modified in git diff
+   - **Git diff MUST only show additions (+ lines)** - no modifications to existing lines allowed
+   - For files with multiple paragraphs:
+     * Insert translations sequentially using multiple Edit tool calls
+     * Match the transition between paragraphs (end of one `</p>` and start of next `<p class="calibre5">`)
+     * Insert new `<p class="translation">` between them
+   - If Edit matching fails:
+     * Try shorter matching strings (e.g., just the paragraph boundary)
+     * Try matching just `</p>\n<p class="calibre5">` pattern
+     * **DO NOT switch to Write tool** under any circumstances
+   - The `old_string` should be the transition point between paragraphs
+   - The `new_string` should be the same transition plus the new `<p class="translation">` paragraph inserted between
+   - This ensures zero modification to original text - only pure insertions
 
 ### Phase 3: Quality Control & Finalization
 9. **MANDATORY Secondary Review**: Verify that:
    - No annotation content (`class="zhu"` or `class="kindle-cn-para-left"`) was translated
    - All regular paragraphs have accurate translations
    - Translation quality meets all guidelines
-10. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
-11. **Single commit**: Include both translated HTML file and updated font file
+10. **Verify Git Diff (CRITICAL)**: Run `git diff OEBPS/Text/[filename].html` to confirm:
+   - Only `+` lines (additions) appear in the diff
+   - No `-` lines (deletions) or modified lines
+   - If any modifications appear, the Edit approach failed - debug and fix before proceeding
+11. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
+12. **Single commit**: Include both translated HTML file and updated font file
 
 **CRITICAL**: Phase 1 annotation identification is MANDATORY and must be completed before any translation work begins. Failure to follow this workflow may result in incorrect translation of annotation content.
 
-14. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
+13. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, git diff verification, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
