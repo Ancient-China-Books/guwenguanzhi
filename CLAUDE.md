@@ -128,14 +128,18 @@ When asked to translate any HTML file, follow this strict workflow:
 5. **Translate only the identified translatable content** following all translation guidelines
 6. **Skip all annotation content** identified in Phase 1 - do not translate anything marked with excluded classes
 7. **Add translations as independent paragraphs** with `<p class="translation">` class
+8. **CRITICAL - Use Edit Tool Only**: You MUST use the Edit tool to insert translation paragraphs. NEVER use the Write tool to replace the entire file. The Edit tool ensures you only add content without modifying the original text. When using Edit:
+   - The `old_string` should be the EXACT original paragraph (including all `<span class="zhu">` tags)
+   - The `new_string` should be the original paragraph PLUS the new `<p class="translation">` paragraph immediately after it
+   - This ensures zero modification to the original text - you are only inserting new content after it
 
 ### Phase 3: Quality Control & Finalization
-8. **MANDATORY Secondary Review**: Verify that:
+9. **MANDATORY Secondary Review**: Verify that:
    - No annotation content (`class="zhu"` or `class="kindle-cn-para-left"`) was translated
    - All regular paragraphs have accurate translations
    - Translation quality meets all guidelines
-9. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
-10. **Single commit**: Include both translated HTML file and updated font file
+10. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
+11. **Single commit**: Include both translated HTML file and updated font file
 
 **CRITICAL**: Phase 1 annotation identification is MANDATORY and must be completed before any translation work begins. Failure to follow this workflow may result in incorrect translation of annotation content.
 
