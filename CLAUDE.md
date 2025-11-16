@@ -154,10 +154,14 @@ When asked to translate any HTML file, follow this strict workflow:
    - No `-` lines (deletions) or modified lines
    - If any modifications appear, the Edit approach failed - debug and fix before proceeding
 11. **Run font subsetting command**: `cat OEBPS/Text/*.html | pyftsubset ~/.local/share/fonts/ttf/Noto/NotoSerifSC-Medium.ttf --text-file=/dev/stdin --output-file=OEBPS/Fonts/NotoSerifSC-Medium.otf`
-12. **Single commit**: Include both translated HTML file and updated font file
+12. **Commit one by one**: When translating multiple HTML files, commit each file separately after completing its translation and font subsetting. Each commit should include both the translated HTML file and the updated font file.
 
 **CRITICAL**: Phase 1 annotation identification is MANDATORY and must be completed before any translation work begins. Failure to follow this workflow may result in incorrect translation of annotation content.
 
-13. **Commit Strategy**: During translation tasks, make only ONE commit after all work is complete. Do not commit intermediate changes. Only commit when you have finished all translation work, quality review, git diff verification, and font subsetting. The single commit should include both the translated HTML file and the updated font file.
+13. **Commit Strategy (IMPORTANT)**:
+    - **For single file translation**: Make ONE commit after completing all work (translation, quality review, git diff verification, and font subsetting)
+    - **For multiple file translations**: Commit ONE BY ONE - complete the full workflow for each file (translation → quality review → git diff verification → font subsetting → commit) before moving to the next file
+    - **DO NOT** use a single commit for all files when translating multiple HTML files
+    - Each commit should include both the translated HTML file and the updated font file
 
 14. **Push to Remote (POLITE INQUIRY)**: After successfully creating the local commit, politely ask the user if they would like to push the changes to the remote repository. Do not push automatically. Use a friendly tone such as: "Translation completed and committed successfully! Would you like me to push these changes to the remote repository?"
