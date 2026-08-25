@@ -242,7 +242,7 @@ h1 {
   box-sizing: border-box;
   padding-top: max(0.3em, env(safe-area-inset-top, 0px));
   padding-bottom: 0.45em;
-  padding-right: max(0.1em, env(safe-area-inset-right, 0px));
+  padding-right: max(0.45em, env(safe-area-inset-right, 0px));
   margin: 0;
   background: #fff;
   border-bottom: 1px solid #ccc;
@@ -268,6 +268,7 @@ h1 {
   z-index: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
   justify-content: flex-end;
   align-items: center;
   gap: 0.35em;
@@ -280,6 +281,13 @@ h1 {
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+body.is-catalog.calibre,
+body#calibre_generated_inline_toc.calibre {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
 }
 
 body > .layer-toolbar {
