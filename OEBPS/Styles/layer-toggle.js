@@ -46,6 +46,30 @@
     } catch (e) {}
   }
 
+  function syncRailMetrics() {
+    var rail = document.getElementsByClassName('title-rail')[0];
+    var root = document.documentElement;
+    if (!root || !root.style) {
+      return;
+    }
+    if (!rail || !root.classList.contains('vertical-rl')) {
+      root.style.removeProperty('--gwgz-rail-size');
+      return;
+    }
+    var size = rail.offsetWidth;
+    if (size > 0) {
+      root.style.setProperty('--gwgz-rail-size', size + 'px');
+    }
+  }
+
+  function syncRailMetricsSoon() {
+    if (window.requestAnimationFrame) {
+      window.requestAnimationFrame(syncRailMetrics);
+    } else {
+      syncRailMetrics();
+    }
+  }
+
   function applyState(state) {
     var body = document.body;
     var root = document.documentElement;
@@ -61,6 +85,7 @@
     if (root && root.classList) {
       root.classList.toggle('vertical-rl', isVertical);
     }
+    syncRailMetricsSoon();
   }
 
   function updateLayerButton(btn, visible) {
@@ -112,40 +137,69 @@
 
   function unwrapRail(toolbar) {
     var rails = document.getElementsByClassName('title-rail');
-    if (!rails.length) {
-      return;
+    var heading = null;
+    if (rails.length) {
+      var rail = rails[0];
+      var parent = rail.parentNode;
+      var child;
+      while (rail.firstChild) {
+        child = rail.firstChild;
+        if (child === toolbar || (child.className && (' ' + child.className + ' ').indexOf(' layer-toolbar ') !== -1)) {
+          rail.removeChild(child);
+        } else {
+          heading = child;
+          rail.removeChild(child);
+        }
+      }
+      parent.removeChild(rail);
     }
-    var rail = rails[0];
-    var parent = rail.parentNode;
-    var child;
-    while (rail.firstChild) {
-      child = rail.firstChild;
-      if (child === toolbar || (child.className && (' ' + child.className + ' ').indexOf(' layer-toolbar ') !== -1)) {
-        rail.removeChild(child);
+    var sizers = document.getElementsByClassName('title-rail-sizer');
+    if (sizers.length) {
+      var sizer = sizers[0];
+      if (heading) {
+        sizer.parentNode.insertBefore(heading, sizer);
+      }
+      sizer.parentNode.removeChild(sizer);
+      heading = null;
+    }
+    if (heading) {
+      var chapter = document.getElementById('chapter');
+      if (!chapter) {
+        var chapters = document.getElementsByClassName('chapter');
+        chapter = chapters.length ? chapters[0] : document.body;
+      }
+      if (chapter.firstChild) {
+        chapter.insertBefore(heading, chapter.firstChild);
       } else {
-        parent.insertBefore(child, rail);
+        chapter.appendChild(heading);
       }
     }
-    parent.removeChild(rail);
   }
 
   function placeToolbar(toolbar, vertical) {
     unwrapRail(toolbar);
-    if (vertical) {
-      var heading = getHeading();
-      if (heading && heading.parentNode) {
-        var rail = createEl('div');
-        rail.className = 'title-rail';
-        heading.parentNode.insertBefore(rail, heading);
-        rail.appendChild(heading);
-        rail.appendChild(toolbar);
-        return;
-      }
+    var heading = getHeading();
+    if (!heading || !heading.parentNode) {
+      document.body.appendChild(toolbar);
+      return;
     }
-    document.body.appendChild(toolbar);
+    var rail = createEl('div');
+    rail.className = 'title-rail';
+    if (vertical) {
+      var sizer = createEl('div');
+      sizer.className = 'title-rail-sizer';
+      heading.parentNode.insertBefore(sizer, heading);
+      rail.appendChild(heading);
+      rail.appendChild(toolbar);
+      document.documentElement.appendChild(rail);
+      return;
+    }
+    heading.parentNode.insertBefore(rail, heading);
+    rail.appendChild(heading);
+    rail.appendChild(toolbar);
   }
 
-  function createToolbar(state, onVerticalToggle) {
+  function createToolbar(state) {
     var catalog = isCatalogPage();
     var toolbar = createEl('div');
     toolbar.className = 'layer-toolbar';
@@ -188,9 +242,8 @@
       applyState(state);
       saveState(state);
       updateVerticalButton(vbtn, state.vertical);
-      if (onVerticalToggle) {
-        onVerticalToggle(state.vertical);
-      }
+      placeToolbar(toolbar, state.vertical);
+      syncRailMetricsSoon();
     };
     toolbar.appendChild(vbtn);
 
@@ -209,10 +262,15 @@
       document.body.classList.add('is-catalog');
     }
 
-    var toolbar = createToolbar(state, function (vertical) {
-      placeToolbar(toolbar, vertical);
-    });
+    var toolbar = createToolbar(state);
     placeToolbar(toolbar, state.vertical);
+    syncRailMetricsSoon();
+    if (window.addEventListener) {
+      window.addEventListener('resize', syncRailMetrics, false);
+    }
+    if (document.fonts && document.fonts.ready && document.fonts.ready.then) {
+      document.fonts.ready.then(syncRailMetrics);
+    }
   }
 
   if (document.readyState === 'loading') {

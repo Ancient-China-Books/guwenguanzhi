@@ -3,9 +3,12 @@ html {
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  background: #fff;
+  scroll-padding-top: 3.5em;
 }
 .calibre {
   font-family: "gwgz-serif", serif;
+  background: #fff;
   letter-spacing: 1px;
   font-size: 110%;
   line-height: 1.7;
@@ -225,33 +228,67 @@ h1 {
   font-size: 0.8em;
 }
 
-body.has-layer-toolbar h1 {
-  padding-right: 16em;
+.title-rail {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em 0.75em;
+  box-sizing: border-box;
+  padding-top: max(0.3em, env(safe-area-inset-top, 0px));
+  padding-bottom: 0.45em;
+  padding-right: max(0.1em, env(safe-area-inset-right, 0px));
+  margin: 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb;
+  font-family: "gwgz-serif", serif;
 }
 
-body.has-layer-toolbar.is-catalog h2 {
-  padding-right: 5.5em;
+.title-rail h1,
+.title-rail h2 {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.title-rail + hr {
+  display: none;
 }
 
 .layer-toolbar {
-  position: fixed;
-  top: max(0.55em, env(safe-area-inset-top, 0px));
-  right: max(0.55em, env(safe-area-inset-right, 0px));
-  z-index: 100;
+  position: static;
+  z-index: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   gap: 0.35em;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 auto;
   box-sizing: border-box;
-  max-width: calc(100vw - 1.1em);
+  max-width: none;
   writing-mode: horizontal-tb;
   -webkit-writing-mode: horizontal-tb;
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+body > .layer-toolbar {
+  position: fixed;
+  top: max(0.55em, env(safe-area-inset-top, 0px));
+  right: max(0.55em, env(safe-area-inset-right, 0px));
+  z-index: 100;
+  max-width: calc(100vw - 1.1em);
+  margin: 0;
 }
 
 .layer-toolbar-sep {
@@ -340,23 +377,10 @@ body.hide-ping .kindle-cn-para-left {
 }
 
 @media screen and (max-width: 480px), screen and (max-device-width: 480px) {
-  body.has-layer-toolbar {
-    padding-top: 2.6em;
-  }
-
-  body.has-layer-toolbar h1 {
-    padding-right: 0;
-  }
-
-  .layer-toolbar {
-    top: max(0.4em, env(safe-area-inset-top, 0px));
-    right: max(0.4em, env(safe-area-inset-right, 0px));
-    left: auto;
-    max-width: calc(100vw - 0.8em);
-    padding: 0;
-    justify-content: flex-end;
-    border: none;
-    box-shadow: none;
+  .title-rail {
+    padding-top: max(0.25em, env(safe-area-inset-top, 0px));
+    padding-bottom: 0.35em;
+    gap: 0.4em 0.5em;
   }
 
   .layer-toggle {
@@ -364,18 +388,28 @@ body.hide-ping .kindle-cn-para-left {
     padding: 0.28em 0.48em;
     letter-spacing: 0.06em;
   }
+
+  body > .layer-toolbar {
+    top: max(0.4em, env(safe-area-inset-top, 0px));
+    right: max(0.4em, env(safe-area-inset-right, 0px));
+    max-width: calc(100vw - 0.8em);
+  }
 }
 
 html.vertical-rl {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
+  width: 100%;
   height: 100%;
+  height: 100vh;
+  height: 100dvh;
 }
 
 html.vertical-rl body.calibre {
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
   -epub-writing-mode: vertical-rl;
+  width: 100%;
+  max-width: 100%;
   height: 100vh;
   height: 100dvh;
   max-height: 100vh;
@@ -396,13 +430,25 @@ html.vertical-rl body.calibre {
   text-align: justify;
 }
 
-html.vertical-rl body.has-layer-toolbar h1,
-html.vertical-rl body.has-layer-toolbar.is-catalog h2 {
-  padding-right: 0;
+html.vertical-rl body.has-layer-toolbar.calibre {
+  padding-block-start: 0;
+}
+
+.title-rail-sizer {
+  display: none;
+}
+
+html.vertical-rl .title-rail-sizer {
+  display: block;
+  box-sizing: border-box;
+  width: var(--gwgz-rail-size, 4em);
+  height: 100%;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 html.vertical-rl .chapter {
-  width: auto;
+  width: max-content;
   max-width: none;
   height: 100%;
   margin: 0;
@@ -419,23 +465,68 @@ html.vertical-rl hr {
 }
 
 html.vertical-rl .title-rail {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 200;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: auto;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
   box-sizing: border-box;
-  padding-inline-end: 0.4em;
+  padding-top: max(0.6em, env(safe-area-inset-top, 0px));
+  padding-bottom: 0.8em;
+  padding-right: max(0.45em, env(safe-area-inset-right, 0px));
+  padding-left: 0.45em;
+  margin: 0;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb;
+  font-family: "gwgz-serif", serif;
+  font-size: 110%;
+  letter-spacing: 1px;
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #fff);
+  border-bottom: none;
+  border-inline-end: none;
+  box-shadow: none;
+  isolation: isolate;
+}
+
+html.vertical-rl .title-rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 0;
+  pointer-events: none;
 }
 
 html.vertical-rl .title-rail h1,
 html.vertical-rl .title-rail h2 {
+  position: relative;
+  z-index: 1;
   flex: 0 0 auto;
   margin: 0;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
 }
 
 html.vertical-rl .title-rail .layer-toolbar {
-  position: static;
+  position: relative;
+  z-index: 1;
   top: auto;
   right: auto;
   bottom: auto;
@@ -450,6 +541,7 @@ html.vertical-rl .title-rail .layer-toolbar {
   gap: 0.35em;
   max-width: none;
   max-height: none;
+  margin: 0;
   padding: 0;
   background: transparent;
   border: none;
@@ -485,5 +577,21 @@ html.vertical-rl .title-rail .layer-toggle.is-off {
 @media print {
   .layer-toolbar {
     display: none !important;
+  }
+
+  .title-rail {
+    position: static;
+    border: none;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .title-rail::before {
+    display: none;
+  }
+
+  .title-rail + hr {
+    display: block;
   }
 }
