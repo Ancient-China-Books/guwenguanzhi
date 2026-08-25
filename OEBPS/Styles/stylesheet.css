@@ -5,7 +5,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 .calibre {
-  font-family: "Noto Serif SC Medium", serif;
+  font-family: "gwgz-serif", serif;
   letter-spacing: 1px;
   font-size: 110%;
   line-height: 1.7;
@@ -263,7 +263,7 @@ body.has-layer-toolbar.is-catalog h2 {
 }
 
 .layer-toggle {
-  font-family: inherit;
+  font-family: "gwgz-serif", serif;
   font-size: 0.78em;
   letter-spacing: 0.12em;
   line-height: 1.2;

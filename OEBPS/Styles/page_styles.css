@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  src: local("Noto Serif SC Medium"), url(../Fonts/NotoSerifSC-Medium.otf);
-  font-family: 'Noto Serif SC Medium';
+  src: url(../Fonts/NotoSerifSC-Medium.otf) format("opentype");
+  font-family: "gwgz-serif";
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
